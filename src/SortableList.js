@@ -276,7 +276,10 @@ export default class SortableList extends Component {
             this.setState({animated: true});
           });
         });
-      });
+      })
+      .catch((e) => {
+        console.log(e);
+      })
   }
 
   _scroll(animated) {
